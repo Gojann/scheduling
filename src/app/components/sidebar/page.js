@@ -54,7 +54,7 @@ const CustomSidebar = ({ userRole, toggle, pathname }) => {
                   };
                 } else {
                   return {
-                    color: "#7e22ce",
+                    color: "#3464AD",
                     fontWeight: "500",
                   };
                 }

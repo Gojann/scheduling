@@ -27,7 +27,7 @@ const Notes = () => {
   }, [dispatch]);
   return (
     <SuperuserLayout>
-      <div>
+      <div className="w-full flex flex-col">
         <div className="bg-card p-2 m-2 rounded-lg mb-5">
           <div className="flex justify-between items-center my-2 ">
             <BreadCrumb text="Notes" />
@@ -39,7 +39,7 @@ const Notes = () => {
         {notes.length > 0 ? (
           <NotesList notes={notes} />
         ) : (
-          <p className="mx-2 text-xs">Loading...</p>
+          <p className="mx-auto text-lg">No notes yet</p>
         )}
       </div>
     </SuperuserLayout>
